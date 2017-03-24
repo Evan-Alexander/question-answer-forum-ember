@@ -1,11 +1,53 @@
 body {
   margin: 5%;
+  background-image: url('./img/app.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Jim Nightshade', cursive;
+}
+
+div.container-fluid {
+  background-color: rgba(245, 245, 245, 0.3);
+}
+
+.main-pg-well,
+.navbar-brand,
+footer,
+#new-question-form {
+  font-size: 3em;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.3);
+}
+
+.question-tile {
+  background-color: rgba(245, 245, 245, 0.3);
+}
+
+.navbar-header {
+  padding: 1.5%;
 }
 
 li {
   list-style: none;
+  font-size: 2.4em;
+  background-color: rgba(245, 245, 245, 0.3);
+  padding-left: 5%;
 }
 
 footer {
   text-align: center;
+}
+font-family: 'Jim Nightshade', cursive;
+font-family: 'Simonetta', cursive;
+
+.button {
+  font-family: 'Simonetta', cursive;
+  font-size: 4em;
+  background-color: red;
+}
+
+img {
+  width: 500px;
 }

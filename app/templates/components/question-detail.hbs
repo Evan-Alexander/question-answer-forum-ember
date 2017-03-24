@@ -1,5 +1,5 @@
 
-<div class="question-tile">
+
   <button class="btn" {{action 'delete' question}}>Delete</button>
   {{question.title}}
   <div class="well">
@@ -8,10 +8,10 @@
     <img src={{question.image}} alt={{question.title}}>
 
   </div>
-</div>
 
 
-<div class="question-tile">
+
+
   <h2>Answers</h2>
 
   <ul>
@@ -19,5 +19,3 @@
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
     {{/each}}
   </ul>
-
-</div>
