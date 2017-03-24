@@ -1,16 +1,20 @@
 
-<p><img src={{question.image}}></p>
-{{question.title}}
-{{question.author}}
-{{question.content}}
-{{question.notes}}
+<div class="question-tile">
+  <button class="btn" {{action 'delete' question}}>Delete</button>
+  <div class="well">
+    {{question.content}}
 
-<h2>Answers</h2>
+  </div>
+</div>
 
-<ul>
-  {{#each question.answers as |answer|}}
+
+<div class="question-tile">
+  <h2>Answers</h2>
+
+  <ul>
+    {{#each question.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
 
-<button class="btn" {{action 'delete' question}}>Delete</button>
+</div>
