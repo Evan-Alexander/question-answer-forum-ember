@@ -1,5 +1,16 @@
 
 <p><img src={{question.image}} alt="picture relating to A Princess Bride"></p>
+{{question.title}}
+{{question.author}}
+{{question.content}}
+{{question.notes}}
+
+<h2>Answers</h2>
+
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
 
 <button class="btn" {{action 'delete' question}}>Delete</button>
-{{question.content}}
