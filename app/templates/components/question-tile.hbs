@@ -1,7 +1,6 @@
 <li>
-  {{#link-to 'question' question.id}}
-  <img src={{question.image}} alt={{question.title}}>
-  <h3>{{question.title}}</h3>
-  <h6>{{question.content}}</h6>
-  <p>{{question.author}}</p>
+  {{#link-to 'question' question.id}}{{question.title}}{{/link-to}}
+  <img src={{question.image}} alt="photo relating to A Princess Bride"/>
+  {{question.content}}
+  {{question.author}}
 </li>
