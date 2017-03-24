@@ -138,6 +138,11 @@ Refactor -
 * app/templates/components/question-detail.hbs - move delete button
 * app/components/question-detail.js - move delete action
 * app/templates/question.hbs - move edit-question component from question-tile; pass in edit-question component model
+* app/routes/question.js - move edit and delete actions from index.js
+* app/routes/index.js - move create new question action to index.js
+* app/templates/index.hbs - pass in new-question component with create new question action
+* app/templates/components/question-tile-tile.hbs - remove delete button; add link to question route
+
 
 
 UX/UI
