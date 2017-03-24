@@ -1,4 +1,5 @@
 <div class="well" id="question-pg">
   <h3>{{model.title}}</h3>
-  {{question-detail question=model}}
+  {{edit-question question=model edit="edit"}}
+  {{question-detail question=model destroyQuestion="destroyQuestion"}}
 </div>
