@@ -2,7 +2,10 @@
 <div class="question-tile">
   <button class="btn" {{action 'delete' question}}>Delete</button>
   <div class="well">
-    {{question.content}}
+
+    <img src={{question.image}} alt={{question.title}}>
+    
+    <p>{{question.content}}</p>
 
   </div>
 </div>
