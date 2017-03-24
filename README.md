@@ -43,7 +43,7 @@ $ npm install   # Needed to update necessary dependencies.
 
 ```bash
 $ bower install   # Handles front end packages like Jquery and Bootstrap.
-
+```
 ## Now you may view the project on your computer by running:
 
 ```bash
@@ -94,7 +94,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ## Planning
 
-Integration
 * Add and update README.md with tech specs, functionality specs, and project planning.
 * ember g route index
 * app/templates/index.hbs - Add first bit of information to home page.
@@ -134,7 +133,9 @@ Integration
 * app/templates/question.hbs - call model.author and model.question to display on dynamic page
 * ember g component question-detail - create component to display all question attributes (including additional notes)
 * app/templates/question.hbs - define question variable as the current model
+
 Refactor -
+
 * app/templates/components/question-detail.hbs - move delete button
 * app/components/question-detail.js - move delete action
 * app/templates/question.hbs - move edit-question component from question-tile; pass in edit-question component model
@@ -152,7 +153,9 @@ Refactor -
 * app/components/new-answer.js - create actions to show form and save answers
 * app/routes/index.js - add save answer action
 * app/templates/index.hbs - add a link on index page to new-answer component
+
 Build Question-Answer Relationship
+
 * app/models/question.js - add answer attribute with hasMany keyword
 * app/models/answer.js - add question attribute with belongsTo keyword
 * app/templates/question.hbs - move new-answer component from index template to question template; pass in current model as question object when rendered
