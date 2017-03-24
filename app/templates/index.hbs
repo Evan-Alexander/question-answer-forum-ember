@@ -2,19 +2,12 @@
 
 <h3>Post questions or answer any number of questions listed below.</h3>
 
+{{new-question saveQuestion="saveQuestion"}}
+
 <ul>
   {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
-{{new-question saveQuestion="saveQuestion"}}
 
-<h2>All Answers</h2>
-
-<ul>
-  {{#each mode.answers as |answer|}}
-    <li>{{answer.content}} by {{answer.author}}</li>
-  {{/each}}
-</ul>
-{{new-answer saveAnswer="saveAnswer"}}
 <hr>
