@@ -142,6 +142,38 @@ Refactor -
 * app/routes/index.js - move create new question action to index.js
 * app/templates/index.hbs - pass in new-question component with create new question action
 * app/templates/components/question-tile-tile.hbs - remove delete button; add link to question route
+* ember g model answer - create answer model
+* app/models/answer.js - define attributes
+* app/routes/index.js - add RSVP hash for models
+* questions.json - update and upload revised seed file to Firebase
+* app/templates/index.hbs - display all answers
+* ember g component new-answer - create component to save new answers
+* app/templates/components/new-answer.hbs - create form for users to input new answers
+* app/components/new-answer.js - create actions to show form and save answers
+* app/routes/index.js - add save answer action
+* app/templates/index.hbs - add a link on index page to new-answer component
+Build Question-Answer Relationship
+* app/models/question.js - add answer attribute with hasMany keyword
+* app/models/answer.js - add question attribute with belongsTo keyword
+* app/templates/question.hbs - move new-answer component from index template to question template; pass in current model as question object when rendered
+* app/components/new-answer.js - attach question to the new-answer
+* app/routes/question.js - add save answer action to question route
+* ember g component answer-tile - create component to display answers with questions
+* app/templates/components/question-detail.hbs - pass in answer-tile to question-detail component
+* app/templates/components/answer-tile.hbs - show all answers for a given question
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
