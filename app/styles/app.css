@@ -12,6 +12,12 @@ div.container-fluid {
   background-color: rgba(245, 245, 245, 0.3);
 }
 
+.main-pg-well {
+  border: none;
+  font-size: 3em;
+  box-shadow: 1px 1px 10px, inset 1px -1px 80px;
+}
+
 .main-pg-well,
 .navbar-brand,
 footer,
