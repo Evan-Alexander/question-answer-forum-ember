@@ -1,3 +1,9 @@
 <h1>Welcome to Wesley's 'A Princess Bride' Question and Answer Forum</h1>
 
 <h3>Post questions or answer any number of questions listed below.</h3>
+
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ul>
