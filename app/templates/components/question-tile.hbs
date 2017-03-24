@@ -1,5 +1,6 @@
 <li>
-  {{question.title}}
-  {{question.content}}
-  {{qustion.author}}
+  <h3>{{question.title}}</h3>
+  <h6>{{question.content}}</h6>
+  <p>{{qustion.author}}</p>
+  <button class="btn" {{action 'delete' question}}></button>
 </li>
