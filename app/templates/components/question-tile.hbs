@@ -1,6 +1,7 @@
-<li>
-  {{#link-to 'question' question.id}}{{question.title}}{{/link-to}}
-  <img src={{question.image}}>
-  {{question.content}}
-  {{question.author}}
-</li>
+<div class="question-tile">
+  <li>
+    {{#link-to 'question' question.id}}{{question.content}}{{/link-to}}
+    <p>{{question.author}}</p>
+
+  </li>
+</div>
