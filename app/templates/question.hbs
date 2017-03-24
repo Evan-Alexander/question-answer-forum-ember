@@ -1,6 +1,8 @@
 <div class="well" id="question-pg">
   <h3>{{model.title}}</h3>
+  <h6>posted by {{question.author}}</h6>
+
+  {{new-answer saveAnswer="saveAnswer" question=model}}
   {{edit-question question=model edit="edit"}}
   {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
-  {{new-answer saveAnswer="saveAnswer" question=model}}
 </div>
