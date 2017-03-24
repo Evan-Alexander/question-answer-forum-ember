@@ -1,1 +1,35 @@
-{{yield}}
+{{#if addNewQuestion}}
+  <h1>Ask Question</h1>
+  <div class="well" id="new-question-form">
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input class="form-control" value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input class="form-control" value=title id="title"}}
+      </div>
+
+      <div class="form-group">
+        <label for="content">Post Question</label>
+        {{textarea class="form-control" value=content id="content"}}
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Additional Notes</label>
+        {{textarea class="form-control" value=notes id="notes"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input class="form-control" value=image id="image"}}
+      </div>
+
+      <button class="btn" {{action 'saveQuestion'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn" {{action 'questionFormShow'}}>New Question</button>
+{{/if}}
