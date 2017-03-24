@@ -1,6 +1,6 @@
 <div class="well" id="question-pg">
   <h3>{{model.title}}</h3>
   {{edit-question question=model edit="edit"}}
-  {{question-detail question=model destroyQuestion="destroyQuestion"}}
-  {{new-answer saveAnswer="saveAnswer" quesiont=model}}
+  {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+  {{new-answer saveAnswer="saveAnswer" question=model}}
 </div>
