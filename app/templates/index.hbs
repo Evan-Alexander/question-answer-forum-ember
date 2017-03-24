@@ -3,7 +3,7 @@
 <h3>Post questions or answer any number of questions listed below.</h3>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.question as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
