@@ -16,13 +16,22 @@ div.container-fluid {
 .navbar-brand,
 footer,
 #new-question-form {
-  font-size: 3em;
   text-align: center;
   background-color: rgba(245, 245, 245, 0.3);
+}
+.navbar-brand,
+footer {
+  font-size: 3em;
 }
 
 .question-tile {
   background-color: rgba(245, 245, 245, 0.3);
+}
+
+.funky {
+  margin-top: 1%;
+  font-size: 1.3em;
+  text-shadow: 1px 2px 3px #000;
 }
 
 .navbar-header {
