@@ -140,12 +140,6 @@ Refactor -
 * app/templates/question.hbs - move edit-question component from question-tile; pass in edit-question component model
 
 
-
-
-
-
-
-
 UX/UI
   * Include and modify bootstrap/materialize/Sass etc.
   * Develop custom style
