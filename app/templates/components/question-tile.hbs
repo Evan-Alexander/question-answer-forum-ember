@@ -1,6 +1,7 @@
 <li>
+  {{#link-to 'question' question.id}}
+  <img src={{question.image}} alt={{question.title}}>
   <h3>{{question.title}}</h3>
   <h6>{{question.content}}</h6>
   <p>{{question.author}}</p>
-  <button class="btn" {{action 'delete' question}}></button>
 </li>
