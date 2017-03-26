@@ -1,8 +1,14 @@
-<div class="well main-pg-well">
-  <p>{{model.title}}</p>
-  <h6>posted by {{model.author}}</h6>
+<div id="question-pg" class="well">
 
-  {{new-answer saveAnswer="saveAnswer" question=model}}
-  {{edit-question question=model edit="edit"}}
+  <h1>Questions ...</h1>
+  <h2>Title: {{model.title}}</h2>
+  <h3>posted by {{model.author}}</h3>
+
+{{new-answer saveAnswer="saveAnswer" question=model}}
+{{edit-question question=model edit="edit"}}
+
   {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+
+
+
 </div>

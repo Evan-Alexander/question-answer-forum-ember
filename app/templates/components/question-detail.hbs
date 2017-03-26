@@ -1,21 +1,18 @@
 
 
-  <button class="btn" {{action 'delete' question}}>Delete</button>
-  {{question.title}}
-  <div class="well">
-
-    <p>{{question.content}}</p>
-    <img src={{question.image}} alt={{question.title}}>
-
-  </div>
 
 
+  <h2>{{question.content}}</h2>
+  <img src={{question.image}} alt={{question.title}}>
+  <h3>Notes: {{question.notes}}</h3>
 
+  <button id="delete-question" class="btn" {{action 'delete' question}}>Delete Question</button>
+<hr>
 
-  <h2>Answers</h2>
+<h2>Answers</h2>
 
-  <ul>
-    {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
-    {{/each}}
-  </ul>
+<ul>
+  {{#each question.answers as |answer|}}
+  {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+</ul>
