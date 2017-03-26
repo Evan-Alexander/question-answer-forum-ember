@@ -72,7 +72,8 @@ FORMS
 ******/
 
 #edit-question-form,
-#new-answer-form {
+#new-answer-form,
+#new-question-form {
   font-size: 2.3rem;
 }
 
@@ -90,6 +91,11 @@ FORMS
   text-shadow: 1px 2px 5px #000;
 }
 
+#new-question-form {
+  background-color: rgba(245, 245, 245, 0.3);
+  text-align: center;
+}
+
 /********
 END FORMS
 *********/
@@ -98,11 +104,6 @@ li {
   list-style: none;
   background-color: rgba(245, 245, 245, 0.3);
   padding-left: 5%;
-}
-
-#index-que-title {
-  transition: all .2s ease-in-out;
-  transform: scale(1.1);
 }
 
 /**********
