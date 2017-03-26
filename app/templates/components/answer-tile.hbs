@@ -1,7 +1,7 @@
 
-  <li>
+  <li id="answer-tile">
     <p>{{answer.content}}</p>
+    <h4 id="ans-author">by {{answer.author}}</h4>
     <br>
-    answer by  {{answer.author}}
-    <button class="btn" {{action 'delete' answer}}>Delete Answer</button>
+    <button class="btn float-right" {{action 'delete' answer}}>Delete Answer</button>
   </li>

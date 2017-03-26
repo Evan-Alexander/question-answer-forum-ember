@@ -46,7 +46,7 @@ footer {
 
 li {
   list-style: none;
-  font-size: 2.4em;
+  /*font-size: 2.4em;*/
   background-color: rgba(245, 245, 245, 0.3);
   padding-left: 5%;
 }
@@ -54,15 +54,44 @@ li {
 footer {
   text-align: center;
 }
-font-family: 'Jim Nightshade', cursive;
-font-family: 'Simonetta', cursive;
-
-.button {
-  font-family: 'Simonetta', cursive;
-  font-size: 4em;
-  background-color: red;
-}
 
 img {
   width: 500px;
 }
+
+#answer-tile {
+  border: 2px solid red;
+  font-family: 'Simonetta', cursive;
+  text-align: left;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+#answer-tile p {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-left: 3%;
+}
+#answer-tile h4 {
+  margin: 0;
+  margin-left: 3%;
+}
+
+#answer-tile button {
+  margin-left: 3%;
+  margin-bottom: 2%;
+}
+
+/*****
+BUTTONS
+******/
+
+
+
+
+/*****
+FONTS
+*****/
+font-family: 'Jim Nightshade', cursive;
+font-family: 'Simonetta', cursive;
