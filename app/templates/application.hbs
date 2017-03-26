@@ -1,14 +1,19 @@
 <div class="container">
-  <header>
+  <header >
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand">{{#link-to 'index'}} Home {{/link-to}} | </a>
-          <li class="navbar-brand">A Princess Bride Q&A Message Board  </li>
+      <div  class="container-fluid">
+        <div id="red" class="navbar-header">
+          <a  class="navbar-brand">{{#link-to 'index'}} Home {{/link-to}} </a>
+          <span class="navbar-brand">|</span>
+          <li class="navbar-brand"> A Princess Bride Question and Answer Forum  </li>
         </div>
       </div>
     </nav>
+    <div class="well main-pg-well">
+      <p> "I do not think it means what you think it means."</p>
+      <h1>Post questions or answer any number of questions listed below.</h1>
+    </div>
   </header>
     {{outlet}}
-  <footer>Created by Jason 'Montoya' Brown</footer>
+  <footer>Created by Jason T. Brown</footer>
 </div>

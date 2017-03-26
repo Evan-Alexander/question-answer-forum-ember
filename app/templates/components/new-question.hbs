@@ -1,6 +1,6 @@
 {{#if addNewQuestion}}
-  <h1>Ask Question</h1>
   <div class="well" id="new-question-form">
+    <h1>Ask Question</h1>
     <form>
       <div class="form-group">
         <label for="author">Author</label>
@@ -31,5 +31,5 @@
     </form>
   </div>
 {{else}}
-  <button class="btn" {{action 'questionFormShow'}}>New Question</button>
+  <button class="btn" {{action 'questionFormShow'}}> Ask A Question</button>
 {{/if}}
