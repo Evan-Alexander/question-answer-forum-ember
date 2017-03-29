@@ -50,5 +50,6 @@
   "bugs": {
     "url": "https://github.com/Evan-Alexander/question-answer-forum-ember/issues"
   },
-  "homepage": "https://github.com/Evan-Alexander/question-answer-forum-ember#readme"
+  "homepage": "https://github.com/Evan-Alexander/question-answer-forum-ember#readme",
+  "dependencies": {}
 }
