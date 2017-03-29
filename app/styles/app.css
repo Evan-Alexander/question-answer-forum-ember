@@ -150,6 +150,10 @@ img {
   margin-bottom: 2%;
 }
 
+#q-tile-author {
+  text-shadow: 1px 1px 30px #fff;
+}
+
 .btn {
   font-family: 'Simonetta', cursive;
 }
